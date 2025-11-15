@@ -20,9 +20,10 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@utils/*": ["./utils/*"],
-      "@hooks/*": ["./hooks/*"],
-      "@components/*": ["./components/*"],
+      "components/*": ["./components/*"],
+      "hooks/*": ["./hooks/*"],
+      "types*": ["./types/index.ts"],
+      "utils/*": ["./utils/*"],
     }
   },
   "include": [

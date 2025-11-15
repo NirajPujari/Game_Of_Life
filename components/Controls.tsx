@@ -1,22 +1,4 @@
-import type { Preset } from "@utils/types";
-
-interface Props {
-  running: boolean;
-  onToggleRun: () => void;
-  onStep: () => void;
-  onClear: () => void;
-  onRandom: () => void;
-  presets: Preset[];
-  onLoadPreset: (p: Preset) => void;
-  speedMs: number; // current delay in ms
-  onSpeedChange: (ms: number) => void;
-  size: number; // current board size (square board)
-  onSizeChange: (size: number) => void;
-  minSize?: number;
-  maxSize?: number;
-  minSpeed?: number;
-  maxSpeed?: number;
-}
+import type { ConrtolProps } from "types";
 
 export default function Controls({
   running,
@@ -30,11 +12,13 @@ export default function Controls({
   onSpeedChange,
   size,
   onSizeChange,
+  wrap,
+  onWrapToggle,
   minSize = 16,
   maxSize = 160,
   minSpeed = 30,
   maxSpeed = 1500,
-}: Props) {
+}: ConrtolProps) {
   return (
     <div className="flex flex-col gap-3">
       <div className="flex flex-wrap items-center gap-2">
@@ -64,6 +48,13 @@ export default function Controls({
           className="px-3 py-1.5 rounded-md border border-slate-200 dark:border-slate-700 text-sm"
         >
           Random
+        </button>
+        <button
+          onClick={onWrapToggle}
+          className={`px-3 py-1.5 rounded-md border text-sm ${wrap ? "bg-sky-600 text-white border-sky-600" : "bg-transparent"}`}
+          title="Toggle edge wrapping (toroidal)"
+        >
+          {wrap ? "Wrap: On" : "Wrap: Off"}
         </button>
       </div>
 

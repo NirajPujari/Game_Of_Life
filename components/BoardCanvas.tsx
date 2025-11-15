@@ -1,13 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import type { Grid } from "@utils/types";
+import type { BoardProps } from "types";
 
-interface Props {
-  grid: Grid;
-  cellSize?: number;
-  onToggle?: (x: number, y: number) => void;
-}
-
-export default function BoardCanvas({ grid, cellSize = 12, onToggle }: Props) {
+export default function BoardCanvas({ grid, cellSize = 12, onToggle }: BoardProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {

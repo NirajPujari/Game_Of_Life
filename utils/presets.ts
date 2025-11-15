@@ -1,5 +1,4 @@
-// /utils/presets.ts
-import { Preset } from "./types";
+import { Preset } from "../types";
 
 /*
   Each preset has:
