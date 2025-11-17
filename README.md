@@ -1,4 +1,4 @@
-# Game of Life 
+# 🌟 Game of Life 
 
 A fast, interactive, and fully customizable implementation of Conway’s Game of Life
 built using Next.js (App Router), TypeScript, Tailwind CSS, and a high-performance
@@ -6,22 +6,24 @@ Canvas renderer. The project includes a clean landing page, detailed preset info
 wrap-mode simulation, adjustable speed and board size, and user-friendly editing tools.
 
 
-## Features
+## ✨ Features
 
-- Real-time Game of Life simulation  
-- Canvas-based renderer for smooth performance  
-- Dark/Light theme support (global toggle)  
-- Wrap mode (toroidal board) toggle  
-- Speed slider (simulation tick rate)  
-- Size slider (dynamic board scaling with center-preservation)  
-- Click-to-toggle cells, step mode, random generator, clear board  
-- Preset loader with classic patterns (Glider, LWSS, Toad, Beacon, Gosper Glider Gun, Acorn, etc.)  
-- Landing page with detailed preset descriptions and large thumbnails  
-- Pattern thumbnails automatically scale based on preset width  
-- Responsive UI using Tailwind CSS  
-- Modular architecture with isolated components and hooks
+- ⚡ Real-time Game of Life simulation
+- 🎨 Canvas-based renderer for smooth performance
+- 🌙 / ☀️ Dark–Light theme toggle
+- 🔁 Wrap mode (toroidal grid) toggle
+- ⏱️ Speed slider (simulation tick rate)
+- 🔍 Size slider (dynamic board scaling with center preservation)
+- 🖱️ Click-to-toggle cells
+- 🎲 Random board generator
+- 🧹 Clear board
+- ⏭️ Step mode (one generation at a time)
+- 📦 Preset loader (Glider, LWSS, Toad, Beacon, Glider Gun, Acorn, etc.)
+- 🖼️ Auto-scaled pattern thumbnails
+- 📱 Fully responsive UI with Tailwind CSS
+- 🧩 Modular architecture with isolated hooks + components
 
-## Folder Structure
+## 📁 Folder Structure
 
 ```
 /app  
@@ -60,7 +62,7 @@ wrap-mode simulation, adjustable speed and board size, and user-friendly editing
   └── globals.css  
        → Tailwind base + custom variables  
 ```
-## Tech Stack
+## 🛠️ Tech Stack
 
 - Next.js (App Router)  
 - React 18  
@@ -70,7 +72,7 @@ wrap-mode simulation, adjustable speed and board size, and user-friendly editing
 - Canvas 2D for rendering  
 - Toroidal logic for wrap mode
 
-## Run Locally
+## 🚀 Run Locally
 
  1. Clone the project:
     ```bash
@@ -97,7 +99,7 @@ wrap-mode simulation, adjustable speed and board size, and user-friendly editing
     http://localhost:3000/
     ```
 
-## How the Game Works
+## 🧠 How the Game Works
 
 Each cell on the grid is either **alive (1)** or **dead (0)**.  
 On each generation, the entire grid updates simultaneously following Conway’s rules:
@@ -115,7 +117,7 @@ With **Wrap Mode** enabled, the grid behaves like a torus (donut shape), so cell
 one edge reappear on the opposite side.
 
 
-## Controls
+## 🎮 Controls
 
 | Control         | Description |
 |-----------------|-------------|
@@ -129,7 +131,7 @@ one edge reappear on the opposite side.
 | **Presets Panel** | Load classic patterns centered in the board |
 | **Theme Toggle** | Switch between Light / Dark mode |
 
-## Presets Included
+## 🧬 Presets Included
 
 - **Glider** – diagonal spaceship  
 - **Blinker** – smallest oscillator  
@@ -147,11 +149,12 @@ Each preset includes:
 - **Pattern type** (spaceship, oscillator, gun, etc.)  
 - **Period or behavior details**  
 - **Origin or historical context**  
-## License
+
+## 📄 License
 MIT
 
 
-## Authors
+## 👤 Authors
 
 - [@Niraj Pujari](https://github.com/NirajPujari)
 
